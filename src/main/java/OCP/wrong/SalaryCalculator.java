@@ -1,5 +1,7 @@
 package OCP.wrong;
     public class SalaryCalculator {
+        // VIOLA OCP: classe não está fechada para modificação.
+        // Sempre que surgirem novos tipos, este método deverá ser alterado.
         public double calculateSalary(Employee employee) {
             if (employee.getType().equals("fulltime")) {
                 return 3000.0;
